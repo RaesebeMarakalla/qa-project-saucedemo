@@ -55,4 +55,4 @@ Requirements Traceability Matrix
 - **Day 1:** Created repo, folder structure and README.
 
 ## Author
-Your Name | [LinkedIn link] | [Email]
+Raesebe Marakalla | [https://www.linkedin.com/in/raesebe-marakalla-7a27b237a/] | [raesebemmarakalla@gmail.com]
