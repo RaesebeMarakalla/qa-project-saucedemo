@@ -49,17 +49,32 @@ Apply QA practices across the full testing lifecycle:
 
 ## Current Deliverables
 - [Test Plan](./01-test-plan/test-plan.md)
+- [Requirements](./02-requirements-and-scenarios/requrements.md)
+- [Test Scenarios](./02-requirements-and-scenarios/test-scenario.md)
 - [Login Test Cases](./03-test-cases/login-test-cases.md)
+- [Cart and Checkout Test Cases](./03-test-cases/cart-checkout-test-cases.md)
+- [Requirements Traceability Matrix](./03-test-cases/RTM.md)
+- [Round 1 Execution Report](./04-execution-reports/screenshots/execution-report-round1.md)
+
+## Round 1 Execution Status
+- Total test cases: 39
+- Passed: 37
+- Failed: 0
+- Blocked: 0
+- Not run: 2 (TC-LOGIN-02 and TC-LOGIN-03)
+- Pass percentage: 94.87%
+
+The execution report records product, sorting, logout, cart, and checkout results. The two unrun login cases are excluded from the pass count.
 
 ## 12-Day Roadmap
 | Day | Task | Status |
 |---|---|---|
 | 1 | Setup and scope | ✅ |
 | 2 | Test plan | ✅ |
-| 3 | Requirements and scenarios | ⬜ |
+| 3 | Requirements and scenarios | ✅ |
 | 4 | Test cases: Login (EP and BVA) | ✅ |
-| 5 | Test cases: Cart and Checkout, RTM | ⬜ |
-| 6 | Test execution round 1 | ⬜ |
+| 5 | Test cases: Cart and Checkout, RTM | ✅ |
+| 6 | Test execution round 1 | ✅ |
 | 7 | Defect reporting | ⬜ |
 | 8 | Exploratory testing | ⬜ |
 | 9 | API testing | ⬜ |
@@ -70,7 +85,11 @@ Apply QA practices across the full testing lifecycle:
 ## Progress Log
 - Day 1: Created repository, folder structure, and project README.
 - Day 2: Drafted the test plan for the SauceDemo project.
+- Day 3: Documented requirements and test scenarios.
 - Day 4: Designed login test cases using EP and BVA techniques.
+- Day 5: Added cart and checkout test cases and the requirements traceability matrix.
+- Day 6: Executed Round 1 product, sorting, logout, cart, and checkout tests; recorded 37 passes and 2 unrun login cases.
+- Day 7: Added Round 1 execution summary and pass percentage.
 
 ## Author
 Raesebe Marakalla
