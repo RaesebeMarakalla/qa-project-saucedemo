@@ -55,6 +55,7 @@ Apply QA practices across the full testing lifecycle:
 - [Cart and Checkout Test Cases](./03-test-cases/cart-checkout-test-cases.md)
 - [Requirements Traceability Matrix](./03-test-cases/RTM.md)
 - [Round 1 Execution Report](./04-execution-reports/screenshots/execution-report-round1.md)
+- [Exploratory Testing Notes](./06-exploratory-testing/exploratory-notes.md)
 
 ## Round 1 Execution Status
 - Total test cases: 39
@@ -76,7 +77,7 @@ The execution report records product, sorting, logout, cart, and checkout result
 | 5 | Test cases: Cart and Checkout, RTM | ✅ |
 | 6 | Test execution round 1 | ✅ |
 | 7 | Defect reporting | ⬜ |
-| 8 | Exploratory testing | ⬜ |
+| 8 | Exploratory testing | ✅ |
 | 9 | API testing | ⬜ |
 | 10 | Automation | ⬜ |
 | 11 | Regression and metrics | ⬜ |
@@ -90,6 +91,7 @@ The execution report records product, sorting, logout, cart, and checkout result
 - Day 5: Added cart and checkout test cases and the requirements traceability matrix.
 - Day 6: Executed Round 1 product, sorting, logout, cart, and checkout tests; recorded 37 passes and 2 unrun login cases.
 - Day 7: Added Round 1 execution summary and pass percentage.
+- Day 8: Completed exploratory checks of the product catalog, sorting, product details, cart navigation, checkout URL, menu, and footer in Chrome and Edge. Firefox remains unverified; results are in the exploratory testing notes.
 
 ## Author
 Raesebe Marakalla
