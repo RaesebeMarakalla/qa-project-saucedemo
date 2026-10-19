@@ -36,6 +36,8 @@ The First Name box shows "Doe", the Last Name box is empty, and the error "Error
 
 ## Evidence
 ![BUG-02](screenshots/BUG-02.png)
+![BUG-02 console](screenshots/BUG-02-console.png)
 
 ## Notes
 Verified: with `standard_user`, the same steps open the overview page. The defect is specific to `problem_user`.
+Retest (Round 2): still reproduces. Console shows "Uncaught TypeError: Cannot read properties of undefined (reading 'value')" at onChange when typing in the form.

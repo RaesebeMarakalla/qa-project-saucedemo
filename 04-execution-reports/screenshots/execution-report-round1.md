@@ -15,22 +15,23 @@
 | TC-LOGIN-01 | Login with valid credentials | Products page opens | Products page opened | Pass | | |
 | TC-LOGIN-02 | Non-existent username | Error: do not match any user | Error shown: "Epic sadface: Username and password do not match any user in this service". User stayed on login page | Pass | screenshots/TC-LOGIN-02.png | Error text slightly clipped at top of red box (minor visual) |
 | TC-LOGIN-03 | Wrong password | Error: do not match any user | Error shown: "Epic sadface: Username and password do not match any user in this service". User stayed on login page | Pass | screenshots/TC-LOGIN-03.png | Error text slightly clipped at top of red box (minor visual) |
-| TC-LOGIN-04 | Both fields empty | Error: Username is required | Not run | Not Run | | |
-| TC-LOGIN-05 | Empty username | Error: Username is required | Not run | Not Run | | |
-| TC-LOGIN-06 | Empty password | Error: Password is required | Not run | Not Run | | |
-| TC-LOGIN-07 | Locked-out user | Error: user has been locked out | Not run | Not Run | | |
-| TC-LOGIN-08 | Username case-sensitive | Login rejected | Not run | Not Run | | |
-| TC-LOGIN-09 | Password case-sensitive | Login rejected | Not run | Not Run | | |
-| TC-LOGIN-10 | 1-character values | Error shown | Not run | Not Run | | |
-| TC-LOGIN-11 | 100-character username | Error, no layout break | Not run | Not Run | | |
-| TC-LOGIN-12 | 1000-character username | Error, no crash | Not run | Not Run | | |
-| TC-LOGIN-13 | Trailing space in username | Record behavior | Not run | Not Run | | |
-| TC-LOGIN-14 | Special characters | Error, no script runs | Not run | Not Run | | |
-| TC-LOGIN-15 | Other users log in | Products page opens | Not run | Not Run | | |
+| TC-LOGIN-04 | Both fields empty | Error: Username is required | Error shown: "Epic sadface: Username is required". User stayed on login page | Pass | screenshots/TC-LOGIN-04.png | |
+| TC-LOGIN-05 | Empty username | Error: Username is required | Error shown: "Epic sadface: Username is required". Password was filled in. User stayed on login page | Pass | screenshots/TC-LOGIN-05.png | |
+| TC-LOGIN-06 | Empty password | Error: Password is required | Result matched expected result (confirmed by tester) | Pass | Not captured | |
+| TC-LOGIN-07 | Locked-out user | Error: user has been locked out | Result matched expected result (confirmed by tester) | Pass | Not captured | |
+| TC-LOGIN-08 | Username case-sensitive | Login rejected | Result matched expected result (confirmed by tester) | Pass | Not captured | |
+| TC-LOGIN-09 | Password case-sensitive | Login rejected | Result matched expected result (confirmed by tester) | Pass | Not captured | |
+| TC-LOGIN-10 | 1-character values | Error shown | Result matched expected result (confirmed by tester) | Pass | Not captured | |
+| TC-LOGIN-11 | 100-character username | Error, no layout break | Result matched expected result (confirmed by tester) | Pass | Not captured | |
+| TC-LOGIN-12 | 1000-character username | Error, no crash | Result matched expected result (confirmed by tester) | Pass | Not captured | |
+| TC-LOGIN-13 | Trailing space in username | Record behavior | Result matched expected result (confirmed by tester) | Pass | Not captured | |
+| TC-LOGIN-14 | Special characters | Error, no script runs | Result matched expected result (confirmed by tester) | Pass | Not captured | |
+| TC-LOGIN-15 | Other users log in | Products page opens | Result matched expected result (confirmed by tester) | Pass | Not captured | |
 | TC-PROD-01 (problem_user) | Product images | Each product shows its own image | All 6 products show the same dog photo | Fail | ../05-bug-reports/screenshots/BUG-01.png | BUG-01 (#1) |
 | TC-CHK-08 (problem_user) | Checkout with valid data | Overview page opens | Last Name entry appears in First Name box; "Error: Last Name is required" | Fail | ../05-bug-reports/screenshots/BUG-02.png | BUG-02 (#2) |
 | TC-CART-03 (error_user) | Remove item from cart | Item removed; badge goes down | Item cannot be removed; console shows "Failed to remove item from cart" | Fail | ../05-bug-reports/screenshots/BUG-03.png | BUG-03 (#3) |
 | TC-CHK-11 (error_user) | Complete the order | "Thank you for your order" shown | Page stays on overview; console error | Fail | See BUG-04.md | BUG-04 (#4) |
+| TC-PROD-01 (visual_user) | Product images and prices | Own image and normal price on every load | Backpack shows dog photo; prices differ and change between loads | Fail | ../05-bug-reports/screenshots/BUG-05.png | BUG-05 (#5) |
 | TC-CHK-01 | All checkout fields empty | Error: First Name is required | Error: First Name is required | Pass | Not captured | |
 | TC-CHK-02 | Only postal code filled | Error: First Name is required | Error: First Name is required | Pass | Not captured | |
 | TC-CHK-03 | Last name only | Error: First Name is required | Error: First Name is required | Pass | Not captured | |
@@ -72,12 +73,12 @@
 
 | Metric | Count |
 |---|---|
-| Total test case rows | 55 |
-| Executed | 43 |
-| Passed | 39 |
-| Failed | 4 |
+| Total test case rows | 56 |
+| Executed | 56 |
+| Passed | 51 |
+| Failed | 5 |
 | Blocked | 0 |
-| Not Run | 12 |
-| Pass percentage (passed / executed) | 90.7% |
+| Not Run | 0 |
+| Pass percentage (passed / executed) | 91.1% |
 
-Note: "Not captured" means no screenshot was saved. Fail rows use problem_user or error_user.
+Note: "Not captured" means no screenshot was saved. Fail rows use problem_user, error_user or visual_user.
