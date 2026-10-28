@@ -72,3 +72,7 @@ The suite covers valid login, invalid login, adding a product to the cart, and c
 - Chrome and Edge were checked for selected browser behavior; Firefox was not tested.
 - Performance, security, and mobile testing were out of scope.
 - SauceDemo is a demonstration site; some special-user behavior is intentionally faulty.
+
+ ## Your verification code
+ 
+ -WTC-3J87D656
